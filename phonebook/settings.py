@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '$4fkj9vg846)5dn__pxfexg@&dod080-u3z_h_c)&y_61n1n-&'
+SECRET_KEY = '-dh*3#9k-&0-fhs3bhrvj0xj48*!072du_ky_1&*^!qyfc1&q-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'app',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -75,8 +77,12 @@ WSGI_APPLICATION = 'phonebook.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'phonebook',
+        'HOST' : 'localhost',
+        'PORT' : 3306,
+        'USER' : 'root',
+        'PASSWORD' : 'root'
     }
 }
 
