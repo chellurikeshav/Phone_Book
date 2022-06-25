@@ -64,7 +64,8 @@ Project is created with:
       ```
 5. You will see something like this.
 
-    ![new](https://user-images.githubusercontent.com/83489527/171010571-b4823253-a8c7-4571-9915-e9a617296c3f.jpg)
+    ![Screenshot (73)](https://user-images.githubusercontent.com/83489527/175769409-dd93b8a4-9011-4ae9-9cb8-e5a8b22f57c2.png)
+    
 
 6. Now, Open Postman and select the bottom right cornor icon for better view and click on 'Body' and select **raw** **JSON**
 
